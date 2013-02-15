@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: MyString
+  preco: 9.99
+  composicao: MyText
+  categoria_id: 1
+  entrega: 2013-02-15
+  receita: MyString
+
+two:
+  nome: MyString
+  preco: 9.99
+  composicao: MyText
+  categoria_id: 1
+  entrega: 2013-02-15
+  receita: MyString
