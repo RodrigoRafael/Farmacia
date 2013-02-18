@@ -1,4 +1,6 @@
 Farmacia::Application.routes.draw do
+  resources :medicines
+
   resources :produtos
 
   resources :categoria

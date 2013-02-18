@@ -11,33 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130215191400) do
-
-  create_table "categoria", :force => true do |t|
-    t.string   "nome"
-    t.text     "descricao"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "produtos", :force => true do |t|
-    t.string   "nome"
-    t.decimal  "preco",        :precision => 10, :scale => 0
-    t.text     "composicao"
-    t.date     "entrega"
-    t.string   "receita"
-    t.datetime "created_at",                                  :null => false
-    t.datetime "updated_at",                                  :null => false
-  end
+ActiveRecord::Schema.define(:version => 20130215134910) do
 
   create_table "remedios", :force => true do |t|
     t.string   "nome"
-    t.decimal  "preco",        :precision => 10, :scale => 0
+    t.float    "preco"
     t.text     "composicao"
     t.date     "entrega"
     t.string   "receita"
-    t.datetime "created_at",                                  :null => false
-    t.datetime "updated_at",                                  :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

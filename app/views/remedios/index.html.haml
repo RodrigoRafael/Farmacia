@@ -1,0 +1,24 @@
+%h1.Listing Remédios
+
+%table{style: "width: 600px"}
+  %tr
+    %th Nome
+    %th Preco
+    %th Composicao
+    %th Receita
+    %th Entrega
+
+  - @remedios.each do |remedio|
+    %tr
+    %td= remedio.nome
+    %td= remedio.preco
+    %td= remedio.composicao
+    %td= remedio.receita
+    %td= remedio.entrega
+    %td= link_to 'Show', remedio
+    %td= link_to 'Edit', edit_remedio_path(remedio)
+    %td= link_to 'Destroy', remedio, method: :delete, data: { confirm: 'Are you sure?' }
+    %br/
+%br/
+
+= link_to 'Novo Remedio', new_remedio_path

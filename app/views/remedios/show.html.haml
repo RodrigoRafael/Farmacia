@@ -1,0 +1,25 @@
+#notice= notice
+
+%p
+  %b Nome:
+  = @remedio.nome
+
+%p
+  %b Preco:
+  = @remedio.preco
+
+%p
+  %b Composicao:
+  = @remedio.composicao
+
+%p
+  %b Receita:
+  = @remedio.receita
+
+%p
+  %b Entrega:
+  = @remedio.entrega
+
+
+= link_to 'Edit', edit_remedio_path(@remedio)
+= link_to 'Back', remedios_path

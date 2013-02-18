@@ -2,7 +2,7 @@ class CreateRemedios < ActiveRecord::Migration
   def change
     create_table :remedios do |t|
       t.string :nome
-      t.decimal :preco
+      t.float :preco
       t.text :composicao
       t.date :entrega
       t.string :receita
